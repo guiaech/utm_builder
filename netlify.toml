@@ -1,12 +1,6 @@
 [build]
-  command = "npm install && npm run build"
+  command = "bash ./netlify-build.sh"
   publish = "dist"
-
-# Environment variables
-[build.environment]
-  # Disable TypeScript's references feature
-  TS_NODE_PROJECT = "./tsconfig.json"
-  NODE_ENV = "production"
 
 # Redirect rule for single-page applications using client-side routing
 [[redirects]]
